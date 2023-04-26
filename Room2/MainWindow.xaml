@@ -1,0 +1,51 @@
+﻿<Window x:Class="Room2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Room2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900">
+    <Grid>
+        <Grid Margin="0,0,646,58" Background="#FFF55A5A"/>
+        <Grid Margin="154,0,494,58" Background="#FF64F75F"/>
+        <Grid Margin="306,0,348,58" Background="#FF83AF13"/>
+        <Grid Margin="457,0,-5,58" Background="#FFAF6213">
+            <Label x:Name="ListRooms" Content="ListRooms&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Center" Height="303" Width="342" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.166"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </Grid>
+        <Label Content="Помещение" Margin="0,0,666,407"/>
+        <Label Content="Длина&#xD;&#xA;Длина&#xD;&#xA;Длина" Margin="0,32,752,375"/>
+        <Label Content="Ширина&#xD;&#xA;" Margin="0,78,743,329"/>
+        <Label Content="Жилое помещение" Margin="154,0,512,407"/>
+        <Label Content="Длина&#xA;Длина&#xA;Длина" Margin="154,32,598,375"/>
+        <Label Content="Ширина&#xA;" Margin="154,78,589,329"/>
+        <Label Content="Число окон&#xD;&#xA;" Margin="159,126,570,281"/>
+        <Label Content="Офис&#xD;&#xA;" Margin="306,0,360,407"/>
+        <Label Content="Длина&#xA;Длина&#xA;Длина" Margin="306,32,446,375"/>
+        <Label Content="Ширина&#xA;" Margin="306,78,437,329"/>
+        <Label Content="Число розеток&#xD;&#xA;" Margin="306,126,400,281"/>
+        <Label Content="Список помещений&#xD;&#xA;" Margin="452,0,214,407"/>
+        <TextBox x:Name="TBLengthR" TextWrapping="Wrap" Margin="48,40,752,375"/>
+        <TextBox x:Name="TBWidthR" TextWrapping="Wrap" Margin="68,82,746,333"/>
+        <TextBox x:Name="TBLengthL" TextWrapping="Wrap" Margin="220,40,598,375"/>
+        <TextBox x:Name="TBWidthL" TextWrapping="Wrap" Margin="221,82,599,333"/>
+        <TextBox x:Name="TBNumW" TextWrapping="Wrap" Margin="235,130,599,285"/>
+        <TextBox x:Name="TBLengthLO" TextWrapping="Wrap" Margin="373,40,448,375"/>
+        <TextBox x:Name="TBWidthLO" TextWrapping="Wrap" Margin="373,86,446,329"/>
+        <TextBox x:Name="TBNumS" TextWrapping="Wrap" Margin="398,134,450,281"/>
+        <Button x:Name="BAddRoom" Content="Button" Margin="8,390,760,15" Click="BAddRoom_Click_1"/>
+        <Button x:Name="BAddLivingRoom" Content="Button" Margin="175,390,610,15" Click="BAddLivingRoom_Click"/>
+        <Button x:Name="BAddOffice" Content="Button" Margin="317,390,450,15" Click="BAddOffice_Click"/>
+        <Button x:Name="BGetList" Content="Button" Margin="580,385,118,20" Click="BGetList_Click"/>
+
+    </Grid>
+</Window>
